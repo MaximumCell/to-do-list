@@ -12,14 +12,24 @@ function DigitalClock() {
             clearInterval(intervalId);
         }
     },[]);
-    function formatTime() {
-        
+    function FormatTime() {
+        let hours = time.getHours();
+        const min = time.getMinutes();
+        const sec = time.getSeconds();
+        const meridiem = hours >= 12 ? "Pm" : "Am";
+
+        hours = hours % 12  || 12;
+
+        return `${padZero(hours)}:${padZero(min)}:${padZero(sec)} ${meridiem}`;
+    }
+    function padZero(number) {
+        return (number < 10 ? "0" : "") + number; 
     }
     return (
     <>
       <div className="clock-container">
         <div className="clock">
-            <span>00:00:00</span>
+            <span>{FormatTime()}</span>
         </div>
       </div>
     </>
