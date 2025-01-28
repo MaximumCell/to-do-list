@@ -7,10 +7,11 @@ body {
   background-attachment: fixed;
   margin: 0;
 }
-.clock-conainer {
-  border: 3px solid orange;
+.clock-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .clock {
   color: white;
   font-size: 6rem;
@@ -19,6 +20,12 @@ body {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.733);
   text-align: center;
   margin-top: 25px;
+  border: 4px solid rgba(255, 166, 0, 0.651);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 50vw;
 }
 .to-do-list {
   font-family: Arial, sans-serif;
@@ -28,6 +35,8 @@ body {
 }
 h1 {
   font-size: 4rem;
+  font-family:'Times New Roman', Times, serif;
+  color: rgb(215, 250, 247);
 }
 
 button {
@@ -77,13 +86,14 @@ li {
   font-size: 2rem;
   font-weight: bold;
   padding: 15px;
-  background-color: whitesmoke;
+  background-color: rgba(49, 3, 92, 0.753);
   margin-bottom: 10px;
   border: 3px solid gray;
-  border-radius: 5px;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   width: 50%;
+  color: white;
 }
 .text {
   flex: 1;
