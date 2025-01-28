@@ -1,11 +1,30 @@
 body{
-  background-color: black;
+  /* background-color: black; */
+  background-image: url(assets/japan.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+.clock-conainer {
+
+}
+
+.clock{
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.733);
+  text-align: center;
+  margin-top: 25px;
 }
 .to-do-list {
   font-family: Arial, sans-serif;
   text-align: center;
   margin-top: 10px;
-  background-color: brown;
+  /* background-color: brown; */
 }
 h1 {
   font-size: 4rem;
